@@ -5,6 +5,12 @@ VisualStudioVersion = 16.0.30128.74
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Impacta.Editora.Web", "Impacta.Editora.Web\Impacta.Editora.Web.csproj", "{6C9E6B4F-1D10-4BC2-9BDA-33D8C03875DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Impacta.Editora.Business", "Impacta.Editora.Business\Impacta.Editora.Business.csproj", "{BE83CFC5-E404-4A6A-BC49-60B029279144}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Impacta.Editora.DataADO", "Impacta.Editora.DataADO\Impacta.Editora.DataADO.csproj", "{A1A174BC-39C9-433E-9D26-49DF08C46A6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Impacta.Editora.Model", "Impacta.Editora.Model\Impacta.Editora.Model.csproj", "{AA7B708C-F92B-4C27-B269-098530F93848}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{6C9E6B4F-1D10-4BC2-9BDA-33D8C03875DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C9E6B4F-1D10-4BC2-9BDA-33D8C03875DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C9E6B4F-1D10-4BC2-9BDA-33D8C03875DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE83CFC5-E404-4A6A-BC49-60B029279144}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE83CFC5-E404-4A6A-BC49-60B029279144}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE83CFC5-E404-4A6A-BC49-60B029279144}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE83CFC5-E404-4A6A-BC49-60B029279144}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1A174BC-39C9-433E-9D26-49DF08C46A6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1A174BC-39C9-433E-9D26-49DF08C46A6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1A174BC-39C9-433E-9D26-49DF08C46A6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1A174BC-39C9-433E-9D26-49DF08C46A6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA7B708C-F92B-4C27-B269-098530F93848}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA7B708C-F92B-4C27-B269-098530F93848}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA7B708C-F92B-4C27-B269-098530F93848}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA7B708C-F92B-4C27-B269-098530F93848}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

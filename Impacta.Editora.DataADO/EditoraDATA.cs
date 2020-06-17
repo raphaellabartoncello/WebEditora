@@ -10,7 +10,7 @@ namespace Impacta.Editora.DataADO
     {
         SqlConnection sqlConn = null;
         SqlCommand comandoSql = null;
-        string stringConexao = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=IMPACTA;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        string stringConexao = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Editora;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
         public bool Delete(int id)
         {
@@ -39,11 +39,11 @@ namespace Impacta.Editora.DataADO
                 comandoSql = new SqlCommand();
 
                 comandoSql.CommandType = System.Data.CommandType.Text;
-                comandoSql.CommandText = "INSERT INTO EDITORA(NOME, TELEFONE, EMAIL, OBSERVACOES) VALUES (@Nome, @Tel, @Email, @Obs)";
-                comandoSql.Parameters.AddWithValue("@Nome", editora.Nome);
-                comandoSql.Parameters.AddWithValue("@Tel", editora.Telefone);
+                comandoSql.CommandText = "INSERT INTO EDITORA(NOMEEDITORA, TELEFONE, EMAIL, OBSERVACOES) VALUES (@NomeEditora, @Telefone, @Email, @Observacoes)";
+                comandoSql.Parameters.AddWithValue("@NomeEditora", editora.NomeEditora);
+                comandoSql.Parameters.AddWithValue("@Telefone", editora.Telefone);
                 comandoSql.Parameters.AddWithValue("@Email", editora.Email);
-                comandoSql.Parameters.AddWithValue("@Obs", editora.Observacoes);
+                comandoSql.Parameters.AddWithValue("@Observacoes", editora.Observacoes);
 
                 comandoSql.Connection = sqlConn;
 

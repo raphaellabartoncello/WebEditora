@@ -11,13 +11,13 @@ namespace Impacta.Editora.Model
         public int Id { get; set; }
 
         [Required]
-        public int Nome { get; set; }
+        public string NomeEditora { get; set; }
 
-        public int Telefone { get; set; }
+        public string Telefone { get; set; }
 
-        public int Email { get; set; }
+        public string Email { get; set; }
 
-        public int Observacoes { get; set; }
+        public string Observacoes { get; set; }
 
 
 

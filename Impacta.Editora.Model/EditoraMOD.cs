@@ -6,7 +6,7 @@ using System.Web;
 
 namespace Impacta.Editora.Model
 {
-    public class Editora
+    public class EditoraMOD
     {
         public int Id { get; set; }
 

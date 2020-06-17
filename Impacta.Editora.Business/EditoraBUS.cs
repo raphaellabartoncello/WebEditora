@@ -10,7 +10,7 @@ namespace Impacta.Editora.Business
     {
         EditoraDATA objDataADO = null;
 
-        public bool Cadastrar(Model.Editora editora)
+        public bool Cadastrar(Model.EditoraMOD editora)
         {
             objDataADO = new EditoraDATA();
 

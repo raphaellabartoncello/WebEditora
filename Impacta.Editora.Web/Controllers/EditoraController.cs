@@ -1,5 +1,11 @@
 ﻿using Impacta.Editora.Business;
+using Impacta.Editora.DataADO;
+using Impacta.Editora.Model;
+using System.Collections.Generic;
 using System.Web.Mvc;
+using System;
+using System.Linq;
+using System.Net;
 
 namespace Impacta.Editora.Web.Controllers
 {
@@ -17,7 +23,7 @@ namespace Impacta.Editora.Web.Controllers
         }
 
         [HttpPost]
-        public ActionResult CadastrarEditora(Model.Editora editora)
+        public ActionResult CadastrarEditora(Model.EditoraMOD editora)
         {
             //objeto BUS
             EditoraBUS editoraBUS = new EditoraBUS();
@@ -40,6 +46,29 @@ namespace Impacta.Editora.Web.Controllers
 
             return View();
 
+        }
+
+        public ActionResult ListarEditoras()
+        {
+            List<EditoraMOD> listaEditoras = null;
+
+            EditoraDATA data = new EditoraDATA();
+
+            try
+            {
+                //Preencher a lista com a consulta ao banco
+                listaEditoras = data.ReadAll();
+
+            }
+            catch (Exception ex)
+            {
+
+                ViewBag.Falha = "O cadastro da tarefa não foi realizado";
+
+                return RedirectToAction("Index");
+            }
+
+            return View(listaEditoras);
         }
     }
 }

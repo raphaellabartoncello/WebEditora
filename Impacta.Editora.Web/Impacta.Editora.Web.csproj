@@ -160,6 +160,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Editora\Index.cshtml" />
     <Content Include="Views\Editora\CadastrarEditora.cshtml" />
+    <Content Include="Views\Editora\ListarEditoras.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -182,6 +183,10 @@
     <ProjectReference Include="..\Impacta.Editora.Business\Impacta.Editora.Business.csproj">
       <Project>{be83cfc5-e404-4a6a-bc49-60b029279144}</Project>
       <Name>Impacta.Editora.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Impacta.Editora.DataADO\Impacta.Editora.DataADO.csproj">
+      <Project>{A1A174BC-39C9-433E-9D26-49DF08C46A6A}</Project>
+      <Name>Impacta.Editora.DataADO</Name>
     </ProjectReference>
     <ProjectReference Include="..\Impacta.Editora.Model\Impacta.Editora.Model.csproj">
       <Project>{aa7b708c-f92b-4c27-b269-098530f93848}</Project>

@@ -8,11 +8,11 @@ namespace Impacta.Editora.DataADO
 {
     interface IEditoraDATA
     {
-        bool Save(Model.Editora editora);
+        bool Save(Model.EditoraMOD editora);
 
-        Model.Editora GetEditora(int id);
+        Model.EditoraMOD GetEditora(int id);
 
-        List<Model.Editora> GetList();
+        List<Model.EditoraMOD> GetList();
 
         bool Delete(int id);
 

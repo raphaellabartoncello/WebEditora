@@ -185,6 +185,10 @@
       <Project>{be83cfc5-e404-4a6a-bc49-60b029279144}</Project>
       <Name>Impacta.Editora.Business</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Impacta.Editora.Model\Impacta.Editora.Model.csproj">
+      <Project>{aa7b708c-f92b-4c27-b269-098530f93848}</Project>
+      <Name>Impacta.Editora.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

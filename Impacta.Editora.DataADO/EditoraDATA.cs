@@ -14,7 +14,6 @@ namespace Impacta.Editora.DataADO
     {
         SqlConnection sqlConn = null;
         SqlCommand comandoSql = null;
-        bool consult = false;
         string stringConexao = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Editora;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
         public bool Delete(int id)
@@ -125,7 +124,7 @@ namespace Impacta.Editora.DataADO
 
             try
             {
-                //Verificar se o nome da conexão é de falto EditoraDB
+                //Verificar se o nome da conexão é de fato EditoraDB
                 using (var conexao = new SqlConnection(ConfigurationManager.ConnectionStrings["ConexaoEditoraDB"].ConnectionString))
                 {
                     comandoSql.Connection = conexao;
